@@ -66,13 +66,27 @@ nav ul li {
 }
 
 nav ul li a {
-	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	border-radius: 6px;
+	padding: 0 .75rem;
+	font-weight: 600;
+	color: #fff;
 	text-decoration: none;
-	transition: color 0.3s;
+	transition: background-color 0.3s ease, color 0.3s;
+}
+
+nav ul li.active a {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #000;
+	font-weight: 600;
 }
 
 nav ul li a:hover {
-	color: #ddd;
+	background-color: #fff;
+	color: #28a745;
 }
 
 .menu-toggle {
@@ -190,11 +204,6 @@ section {
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.benefit:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
 .benefit img {
 	width: 50px;
 	margin-bottom: 1rem;
@@ -252,11 +261,6 @@ footer img {
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.feature:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
 .feature img {
 	width: 60px;
 	margin-bottom: 1rem;
@@ -303,7 +307,7 @@ footer img {
 }
 
 .step-card:hover {
-	transform: translateY(-5px);
+	transform: translateY(-10px);
 }
 
 .step-card__icon {
@@ -326,7 +330,7 @@ footer img {
 .animate {
     opacity: 0;
     transform: translateX(-100%);
-    transition: all 1s ease-in-out;
+    transition: all 0.8s ease-in-out;
 }
 
 .animate:nth-child(even) {
