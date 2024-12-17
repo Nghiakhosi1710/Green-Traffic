@@ -140,34 +140,6 @@
 			<iframe src="https://www.youtube.com/embed/DbN6fzquu-Y" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
-	<script>
-		const ctaBtn = document.querySelector('.cta-btn');
-		const videoPopup = document.getElementById('videoPopup');
-		const closePopup = document.getElementById('closePopup');
-
-		ctaBtn.addEventListener('click', function (event) {
-			event.preventDefault();
-			videoPopup.style.display = 'flex';
-		});
-
-		closePopup.addEventListener('click', function () {
-			videoPopup.style.display = 'none';
-		});
-
-		window.addEventListener('click', function (event) {
-			if (event.target === videoPopup) {
-				videoPopup.style.display = 'none';
-			}
-		});
-		const menuToggle = document.getElementById('menuToggle');
-		const menu = document.getElementById('menu');
-		const navbar = document.getElementById('navbar');
-
-		menuToggle.addEventListener('click', () => {
-			menu.classList.toggle('show');
-			menuToggle.classList.toggle('active');
-		});
-	</script>
 </body>
 
 </html>
