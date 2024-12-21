@@ -327,7 +327,10 @@ footer img {
 	line-height: 1.5;
 }
 .manuals {
-	padding: 2.5rem 10%;
+	padding: 2.5rem calc(1.5rem * .5);
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
 }
 .manuals .manuals-header {
     margin-bottom: 50px;
