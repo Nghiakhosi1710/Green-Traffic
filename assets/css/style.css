@@ -736,3 +736,28 @@ footer img {
 	}
 }
 
+@media (min-width: 576px) {
+	.manuals {
+		max-width: 540px;
+	}
+}
+@media (min-width: 768px) {
+	.manuals {
+		max-width: 720px;
+	}
+}
+@media (min-width: 992px) {
+	.manuals {
+		max-width: 960px;
+	}
+}
+@media (min-width: 1200px) {
+	.manuals {
+		max-width: 1140px;
+	}
+}
+@media (min-width: 1400px) {
+	.manuals {
+		max-width: 1320px;
+	}
+}
